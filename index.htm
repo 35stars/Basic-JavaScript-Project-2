@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nike Store Website</title>
+
+<link rel="stylesheet" type="text/css" href="hero.css">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<link rel="stylesheet" type="text/css" href="services.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="about.css">
+<link rel="stylesheet" type="text/css" href="product.css">
+<link rel="stylesheet" type="text/css" href="video.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+
+<style>
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    section.on {
+        background: #000;
+
+        .contact-form h2 {
+            color: white !important;
+        }
+
+        #offers > div, .card {
+            border: 1px dashed white;
+            border-radius: 10px;
+        }
+    }
+
+    section.on p,
+    section.on h3 {
+        color: #fff ;
+    }
+
+    section.on h2,
+    section.on b {
+        color: #FFFF00 !important;
+    }
+
+    @media (max-width:768px) {
+
+        header h1 {
+            font-size: 25px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER  -->
+
+<header>
+    <nav>
+        <a href="#"><img id="logo" src="icons/logo.png"></a>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div id="light-dark">
+                <img src="icons/night.png">
+            </div>
+            <div id="menu">
+                <span style="display:none; font-size: 50px">&times;</span>
+                <img src="icons/menu.png">
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div>
+
+    <div>
+        <h2 style="padding-bottom:1rem">About Us</h2>
+        <h3 style="padding-bottom:1rem"> We exist to bring inspiration and innovation to every athlete in the world</h3>
+
+        <p>Nike, Inc. is more than a footwear and apparel company. We are a brand driven by a passion for sport, creativity, and innovation.
+        </p>
+
+        <br>
+        <p>Founded in 1964, Nike has grown from a small company into one of the world's leading sports brands. We create innovative footwear, apparel, and equipment designed to help athletes perform at their best.
+        </p>
+
+        <br>
+        <p>We believe that sport has the power to inspire people, bring communities together, and push the world forward. Our goal is to continue creating products and experiences that empower every athlete to reach their full potential.
+        </p>
+    </div>
+    <div>
+        <img src="images/about.png" style="width:100%; object-fit: cover;">
+    </div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+<div>
+    <h2>What We Offer</h2>
+    <p style="text-align:center; max-width: 600px;">We provide innovative products and experiences designed to support athletes and inspire everyone to keep moving.</p>
+</div>
+
+<div id="offers">
+    <div>
+        <img src="images/1.png" style="width:100%">
+
+        <b>01 — Athletic Footwear</b>
+        <p>High-performance shoes designed for running, training, basketball, and everyday movement.</p>
+    </div>
+
+    <div>
+        <img src="images/2.png" style="width:100%">
+        <b>02 — Sports Apparel</b>
+        <p>Quality equipment and accessories designed to support athletes in their favorite sports and activities.</p>
+    </div>
+
+    <div>
+        <img src="images/3.png" style="width:100%">
+        <b>03 — Sports Equipment</b>
+        <p>Quality equipment and accessories designed to support athletes in their favorite sports and activities.</p>
+    </div>
+
+    <div>
+        <img src="images/4.png" style="width:100%">
+        <b>04 — Personalized Experience</b>
+        <p>Discover products and styles that match your sport, personality, and individual goals.</p>
+    </div>
+
+    <div>
+        <img src="images/5.png" style="width:100%">
+        <b>05 — Innovation & Technology</b>
+        <p>We continuously develop new technologies and designs to improve comfort, performance, and athletic experience.</p>
+    </div>
+
+    <div>
+        <img src="images/6.png" style="width:100%">
+        <b>06 — Nike Member Experience</b>
+        <p>Get access to exclusive products, personalized recommendations, member benefits, and inspiring content.</p>
+    </div>
+</div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+
+<h2 style="padding: 1rem;">Featured Video</h2>
+
+<div class="video-container">
+
+    <iframe
+    class="video"
+    id="video"
+    src="https://www.youtube.com/embed/1VNQB0SYLII"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+
+<!-- CONTENT -->
+<section id="product" 
+class="content"
+style="padding: 120px 0px 40px; width: 100%;
+display: flex;
+justify-content: center;">
+
+<div class="card" 
+style="
+background: transparent;
+display:flex;
+flex-direction: column;
+align-items: center;
+max-width: 900px;
+margin: 1.5rem;
+">
+
+<h2>Nike Product</h2>
+
+<div> 
+
+<figure>
+
+    <div style="width:300px; height: 300px;"> 
+        <img id="img" 
+        src=""
+        style="object-fit: cover;
+        width: 100%;
+        height: 100%;"
+        alt="Product">
+    </div> 
+    <br><br>
+    <figcaption>
+        <p style="font-size: 1.5rem;"><span id="price"></span></p>
+        <p id="product-name" style="font-size: 1.2rem;">Air Max 90</p>
+    </figcaption>
+</figure>
+
+<br>
+<div id="radio-buttons">
+</div>
+</div>
+
+<br>
+<p>
+Choose the quantity of the item you would like to purchase.
+</p>
+
+
+<div class="buttons">
+    <button id="dec-btn">-</button>
+
+    <!-- QUANTITY -->
+    <span id="quantity">0</span>
+
+    <button id="inc-btn">+</button>
+</div>
+
+<div>
+<button id="sub-btn">Add to Cart</button>
+&nbsp;
+<button id="res-btn">Reset</button>
+</div>
+
+<p id="message" style="padding-top: .5rem;"></p>
+
+<!-- NAME -->
+<div id="name-section">
+
+<input
+type="text"
+name="name"
+id="name"
+placeholder="Enter Your Name Here...">
+
+<button id="enter-btn" style="background: rgba(13, 110, 253); padding: .6rem;">
+    Enter
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact" style="padding: 150px 30px 40px;">
+
+    <div class="contact-container"
+    style="">
+
+        <div class="contact-content">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h2>GET IN TOUCH</h2>
+
+                <p class="contact-description">
+                    Whether you need help with an order, product,
+                    membership, or anything else, we're ready to assist you.
+                </p>
+
+                <div style="display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;">
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            <img src="icons/inquiry.png"
+                            style="width:100%">
+                        </div>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>support@nike.com</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                           <img src="icons/phone.png"
+                            style="width:100%">
+                        </div>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p>09268038061</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            <img src="icons/location.png"
+                            style="width:100%">
+                        </div>
+
+                        <div>
+                            <h3>Store Location</h3>
+                            <p>
+                                Nike Store<br>
+                                Manila, Philippines
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            <img src="icons/clock.png"
+                            style="width:100%">
+                        </div>
+
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>
+                                Monday – Saturday<br>
+                                9:00 AM – 8:00 PM
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+
+                <h2>SEND US A MESSAGE</h2>
+
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="What can we help you with?"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+
+                    <button type="submit">
+                        SEND MESSAGE
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>&copy; 2026 Copyright. All rights reserved. Coded by Jamestar Kee Navarro</p>
+
+</footer>
+
+<script src="header.js"></script>
+<script src="product.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

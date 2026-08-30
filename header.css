@@ -1,0 +1,115 @@
+
+
+
+    header {
+        background: rgba(13, 110, 253);
+        color: white;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        top: 0;
+        padding: 1rem;
+    }
+
+    header nav img {
+        width: 80px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    header li:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    header li {
+        list-style: none;
+    }
+
+
+    header p {
+        opacity: .9;
+    }
+
+    nav > div {
+        display: flex;
+   
+    }
+
+    #logo {
+        display: block;
+    }
+
+    #light-dark {
+        margin-left: 2rem;
+        display: flex; 
+        width: 21px;
+    }
+    #light-dark img {
+        width: 100%;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    #menu {
+        display: none;
+        cursor: pointer;
+
+        width: 30px;
+    }
+    #menu img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 575px) {
+
+        #menu {
+            display: block;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        nav > div {
+            flex-direction: column;
+        }
+
+        #light-dark {
+            padding-top: .5rem;
+            margin-left: 0rem;
+        }
+
+        nav ul {
+            display: none;
+        }
+
+        nav ul li {
+            padding-bottom: .5rem;
+        }
+
+        .show{
+            display: block;
+        }
+    }
+
+    

@@ -1,0 +1,33 @@
+
+#about {
+display: flex; 
+justify-content: center; 
+padding: 120px 0px 40px;
+}
+
+#about > div {
+display: flex; gap: 1.5rem;  max-width: 1200px;
+}
+
+#about > div > div, #services > div {
+margin: 40px auto 0;
+	padding: 0 20px;
+}
+
+@media (max-width:768px) {
+
+    /* ABOUT */
+    #about > div{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #about > div > div {
+        margin: 40px auto 0;
+        padding: 0 20px;
+    }
+
+    #about h2 {
+        text-align: center;
+    }
+}
